@@ -1,0 +1,291 @@
+header
+  width: 100%
+  height: 400px
+  position: relative
+  top: 0
+  left: 0
+  background: url(../imgs/fondo.png)
+  background-size: 200%
+  background-position: top, right
+  background-repeat: no-repeat
+  background-attachment: fixed
+
+
+  h2
+    font-size: 3.4em
+    display: block
+    width: 90%
+    text-align: center
+    position: absolute
+    transform: translate(-50%, 0)
+    top: 80px
+    left: 50%
+    font-family: 'Lato', sans-serif
+    font-style: italic
+    font-weight: 900
+
+    color: $fondo-claro
+    text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+    text-align: center
+
+  h1
+    position: absolute
+    transform: translate(-50%, 0)
+    top: 120%
+    left: 50%
+    display: block
+    width: 90%
+
+    font-family: 'Lato', sans-serif
+    font-style: italic
+    text-align: center
+    font-weight: 600
+    font-size: 2em
+
+    color: $fondo-claro
+
+  .perfil-picture
+    position: absolute
+    transform: translate(-50%, -50%)
+    top: 90%
+    left: 50%
+
+    width: 230px
+    height: 230px
+    border: solid 10px $gris-oscuro
+    background: $fondo-claro
+    border-radius: 50%
+
+
+@media screen and (min-width: 360px)
+
+  header
+    background-size: 170%
+
+
+@media screen and (min-width: 412px)
+
+  header
+    background-size: 150%
+
+
+@media screen and (min-width: 425px)
+
+  header
+    background-size: 150%
+
+
+@media screen and (min-width: 568px)
+
+  header
+    background-size: 100%
+
+
+@media screen and (min-width: 568px) and (orientation: landscape)
+
+  header
+    height: 280px
+
+    .perfil-picture
+
+      top: 90%
+
+      width: 180px
+      height: 180px
+      border: 10px solid $gris-oscuro
+
+    h2
+      font-size: 2.6em
+      display: block
+      width: 90%
+      top: 70px
+      line-height: 1em
+
+    h1
+
+      top: 350px
+
+      display: block
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+
+
+@media screen and (min-width: 667px) and (orientation: landscape)
+
+  header
+    .perfil-picture
+
+      width: 200px
+      height: 200px
+
+    h2
+      font-size: 2.5em
+      top: 60px
+
+
+@media screen and (min-width: 736px) and (orientation: landscape)
+
+  header
+    height: 320px
+
+    .perfil-picture
+
+      width: 220px
+      height: 220px
+      top: 83%
+
+    h1
+      font-size: 1.2em
+      top: 375px
+
+
+@media screen and (min-width: 768px)
+
+  header
+    height: 500px
+
+    .perfil-picture
+
+      top: 90%
+
+      width: 280px
+      height: 280px
+
+    h2
+      font-size: 4.5em
+      display: block
+      width: 90%
+      top: 60px
+
+    h1
+
+      top: 250px
+
+      display: block
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+
+
+@media screen and (min-width: 1024px)
+
+  header
+    h2
+      font-size: 5em
+
+    h1
+      font-size: 2em
+
+
+@media screen and (min-width: 1300px)
+
+  header
+    height: 550px
+    background-position: center
+
+    .perfil-picture
+
+      top: 90%
+
+      width: 350px
+      height: 350px
+      border: 15px solid $gris-oscuro
+
+    h2
+      font-size: 5.5em
+      width: 90%
+      top: 70px
+
+    h1
+
+      top: 265px
+      font-size: 2em
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+
+
+
+@media screen and (min-width: 1366px) and (orientation: landscape)
+
+  header
+    height: 800px
+
+    background-position: top
+
+    .perfil-picture
+
+      top: 90%
+
+      width: 450px
+      height: 450px
+      border: 15px solid $gris-oscuro
+
+    h2
+      font-size: 8em
+      width: 90%
+      top: 100px
+
+    h1
+
+      top: 380px
+      font-size: 4em
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+
+
+@media screen and (min-width: 1440px)
+
+  header
+    height: 550px
+    background-position: center
+
+    .perfil-picture
+
+      top: 90%
+
+      width: 330px
+      height: 330px
+      border: 12px solid $gris-oscuro
+
+    h2
+      font-size: 4.5em
+      display: block
+      width: 90%
+      top: 60px
+
+    h1
+
+      top: 250px
+
+      display: block
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)
+
+
+@media screen and (min-width: 2560px)
+
+  header
+    height: 950px
+    background-position: center
+
+    .perfil-picture
+
+      top: 85%
+
+      width: 600px
+      height: 600px
+      border: 20px solid $gris-oscuro
+
+    h2
+      font-size: 6.5em
+      display: block
+      width: 90%
+      top: 150px
+
+    h1
+
+      top: 400px
+      font-size: 3em
+
+      display: block
+      width: 90%
+      text-shadow: 0px 2px 3px $gris-oscuro, 0px -1px 2px rgba($gris-oscuro, .4)

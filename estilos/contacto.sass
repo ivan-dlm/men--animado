@@ -1,0 +1,134 @@
+#contacto
+  background: $fondo-claro
+  padding: 20px
+  font-family: 'Open Sans', sans-serif
+  letter-spacing: 2px
+  text-align: center
+
+  p
+    color: $gris-claro
+    margin-bottom: 60px
+    font-size: .7em
+
+  p:first-of-type
+    font-size: 1.8em
+    font-style: italic
+    font-family: 'Lato', sans-serif
+    line-height: 1em
+    letter-spacing: normal
+    margin-bottom: 10px
+
+  form
+
+    width: 100%
+    max-width: 375px
+    margin: auto
+
+    input
+      background: none
+      border: none
+      border-bottom: 1px solid rgba($gris-oscuro, .4)
+      margin-bottom: 20px
+      font-family: 'Open Sans', sans-serif
+
+      width: 100%
+      padding: 6px 5px
+      cursor: pointer
+      display: flex
+      color: $azul-oscuro
+
+      transform: translate(0, -50%)
+      left: 50%
+      transition: .3s all ease-out
+
+    input::placeholder
+      color: rgba($gris-oscuro, .4)
+      font-size: 1em
+
+    input:focus
+      outline: 0
+      transition: all ease-out .3s
+      font-size: 1.2em
+      letter-spacing: 2px
+      border-bottom: 1px solid $azul-oscuro
+
+    input:focus::placeholder
+      color: $azul-oscuro
+
+    input:hover
+      letter-spacing: 2px
+      transition: .3s ease-out all
+
+    input:hover::placeholder
+      color: $azul-oscuro
+      transition: .3s ease-out all
+
+    textarea
+      width: 100%
+      height: 150px
+      border-radius: 7px
+      padding: 10px 6px
+      font-family: 'Open Sans', sans-serif
+      letter-spacing: 2px
+      resize: none
+
+      border: 1px solid rgba($gris-oscuro, .4)
+      background: none
+      color: $azul-oscuro
+      cursor: pointer
+
+    textarea:hover::placeholder
+      color: $azul-oscuro
+      transition: .3s ease-out all
+
+    textarea::placeholder
+      color: rgba($gris-oscuro, .4)
+      font-size: 1em
+      transition: .3s all ease-out
+
+    textarea:focus
+      outline: 0px
+      border: 1px solid $azul-oscuro
+      transition: .3s ease-out all
+
+    textarea:focus::placeholder
+      color: $azul-oscuro
+
+    input:last-of-type
+      margin-bottom: 30px
+
+  > input
+
+    width: 60%
+    max-width: 240px
+    border-radius: 6px
+    background: none
+    border: solid 1px rgba($gris-oscuro, .4)
+    margin: 10px auto
+    padding: 7px
+    color: rgba($gris-oscuro, .4)
+    font-size: 1em
+    cursor: pointer
+    letter-spacing: 2px
+    transition: .3s all ease-out
+    box-shadow: 0px 0px 0px rgba($gris-oscuro, 1)
+
+  > input:hover
+    border: 1px solid $azul-oscuro
+    background: $azul-oscuro
+    color: $fondo-claro
+    transition: .3s all ease-out
+
+  > input:focus
+    outline: 0px
+
+  > input:active
+    animation: sombra 1s ease-out
+
+    @keyframes sombra
+
+      0%
+        box-shadow: 0px 0px 0px 0px rgba($gris-oscuro, 1)
+
+      100%
+        box-shadow: 0px 0px 10px 6px rgba($gris-oscuro, .0)
